@@ -1,0 +1,87 @@
+.fade.in.modal{
+    display: flex!important;
+}
+.modal .modal-dialog{
+    margin: auto;
+    background: url("./../../images/path-2.png") no-repeat 100%;
+    background-size: contain;
+    max-width: 570px;
+    height: 551px;
+}
+.modal .modal-content, .modal .modal-content-info{
+    border: none; 
+    box-shadow: none;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-wrap-btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 40px;
+}
+.close-btn{
+    transform: rotate(-45deg);
+    color: #493b6e;
+    font-size: 36px; 
+    font-weight: bold; 
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+.modal-content-text{
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1.1px;
+    color: #493b6e;
+    text-transform: uppercase;
+   
+}
+.modal-content-logo{
+    margin-bottom: 20px;
+}
+.modal-form > form{
+    margin-top: 40px;
+}
+.modal-form > form .form-group{
+    margin-bottom: 20px;
+}
+.modal-form > form .form-group .form-input{
+    font-size: 18px;
+}
+.modal-form > form .popoverForm{
+    position: absolute;
+    top: 105%;
+    right: calc(50% - 190px) ;
+    z-index: 10;
+}
+@media (max-width: 768px){
+    .modal .modal-dialog{
+        height: auto;
+        background-image: none;
+        background: #fff;
+        border-radius: 20px;
+    }
+    .modal .modal-content-info{
+        width: 90%;
+        margin: 0 auto 30px auto;
+    }
+    .modal-form > form .popoverForm{     
+        top: 95%;
+    }
+} 
+@media (max-width: 480px){
+    .modal .modal-dialog{
+       width: 90%;
+    }
+    .modal-form > form .popoverForm{     
+       right: 0;
+    }
+}

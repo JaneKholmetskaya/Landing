@@ -1,0 +1,88 @@
+.header-navbar{
+    min-height: 80px;
+    background: none;
+    box-shadow: 0 1px 15px 0 rgba(0, 0, 0, 0.4);
+    border: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.header-navbar .navbar-right, .header-navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-navbar .container:before, .header-navbar .container:after{
+    display: none;
+}
+.header-navbar .container>.navbar-header:before, .header-navbar .container>.navbar-header:after{
+    display: none;
+}
+.header-btn{
+    width: 220px;
+    height: 36px;
+    border-radius: 18px;
+    border: solid 2px #a7578a;
+    background: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    color: #a7578a;
+    padding: 0;
+    text-transform: uppercase;
+}
+.header-btn:hover, .header-btn:active, .header-btn:active:hover, .header-btn:focus{
+    background-color: #a7578a!important;
+    color: #fff!important;
+    border: solid 2px #a7578a;
+}
+.navbar-nav.navbar-right>li{
+    margin: 0 15px;
+    font-size: 18px;
+}
+.navbar-nav.navbar-right>li>a{
+    color: #272727;
+}
+.navbar-nav.navbar-right>li>a:hover {
+    color: #a7578a;
+}
+@media (max-width: 1200px){
+    .navbar-nav.navbar-right>li{
+       padding-left: 15px;
+       padding-right: 15px;
+       margin: 0;
+    }
+    .navbar-nav.navbar-right>li>a{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media (max-width: 991px){
+    .navbar-nav.navbar-right>li{
+       font-size: 14px;
+       padding-left: 7px;
+       padding-right: 7px;
+    }
+}
+@media (max-width: 767px){
+    .header-navbar .container{
+       width: 80%;
+       display: block;
+    }
+    .header-navbar .container>.navbar-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .navbar-toggle{
+        margin: 0;
+    }
+    .navbar-nav.navbar-right{
+        display: block;
+    }
+    .navbar-nav.navbar-right>li{
+       font-size: 18px;
+    }
+}

@@ -1,0 +1,15 @@
+{
+  "short_name": "Спортивный клуб Запорожье ТОНУС - место для всей семьи!",
+  "name": "Спортивный клуб Запорожье ТОНУС - место для всей семьи!",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

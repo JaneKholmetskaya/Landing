@@ -1,0 +1,65 @@
+.submit-section{
+    background: url("../../images/submit-background.png") no-repeat 100%;
+    background-size: cover;
+    height: 600px;
+    background-position-x: 0; 
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+
+.submit-section .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.submit-section-form {
+    width: 100%;
+}
+.submit-section-form > form{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.submit-section-form > form .formErrors{
+    display: flex;
+}
+.submit-section-form > form .error-form{
+    min-width: 370px;
+    margin-right: 30px;
+}
+.submit-section-form > form .error-form-text{
+    color: #fff;
+}
+.submit-section-form-btn{
+    width: 370px;
+    height: 50px;
+    font-size: 18px;
+}
+
+@media (max-width: 1200px){
+    .submit-section-form > form{        
+        flex-direction: column;
+        align-items: center;
+    }
+    .submit-section-form> form >.form-group{
+        margin-bottom: 30px;
+    }
+    .submit-section-form > form .formErrors{
+        flex-direction: column;
+    }
+    .submit-section-form > form .error-form{
+        margin: 3px 0;
+    }
+} 
+
+@media (max-width: 480px){
+    .submit-section-form > form .error-form{
+        max-width: 220px;
+        min-width: 220px;
+    }
+} 

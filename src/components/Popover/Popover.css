@@ -1,0 +1,27 @@
+.popoverForm{
+    position: absolute;
+    top: 100%;
+    right: 1%;
+    z-index: 10;
+}
+@media (max-width: 1200px){
+    .popoverForm{
+        top: 105%;
+        right: calc(50% - 190px) ;
+    }
+} 
+@media (max-width: 480px){
+    .popoverForm{
+        text-align: center;
+        right: 10%;
+    }
+    .popoverForm img{      
+       width: 90%;
+    }
+} 
+@media (max-width: 320px){
+    .popoverForm{
+        text-align: center;
+        right: 0px; 
+    }
+} 
